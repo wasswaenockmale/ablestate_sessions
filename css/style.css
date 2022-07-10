@@ -1,0 +1,84 @@
+/* colors to use 
+    body-> #D7D9CE
+    greenish color->#13505b
+ */
+
+ /* To center the login details, I put everything under the container and then I center whatever is in the 
+ body of the html, which is the container that containers everything that I have laid out in the html  */
+ body,html{
+     background-color: #D7D9CE;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ /* The .container div is the div that contains everything in the body of the html of the login form  */
+ .container{
+     justify-content: center;
+     margin:10px;
+     padding:10px;
+ }
+
+ /* The .div-form class is for the div that contains the fields to fill in the user credentials together with the login word  */
+ .div-form{
+     background-color: white;
+     width: 400px;
+     height: 400px;
+     border-radius: 20px;
+     margin: 5px;
+     padding: 10px;
+ }
+
+ /* The class .logo is for the div which contains a logo for the company  */
+ .logo{
+     display: flex;
+     justify-content: center;
+     align-self: center;
+     width: 420px;
+     height: 105px;
+     margin: 5px;
+ }
+
+ /* This div below helps find the borders of each and every div that I have created in the login page  */
+ /* div{
+     border:1px solid black;
+ } */
+
+ /* The class 'user_credentials' and 'password' are for input elements that accept the uer credentials */
+ .user_credentials, .password{
+     margin: 5px;
+     width: 350px;
+     height: 40px;
+ }
+
+ /* The .form-login-div contains specifically the input fields */
+ .form-login-div{
+     margin-top:5px;
+     height: 300px;
+     padding:10px;
+ }
+
+ /* This style is for the word login in the login.html file.  */
+ .div-login{
+     display: flex;
+     justify-content: center;
+ }
+
+ /* Here I am working with the 'button-login' which is a class for the div that contains a login button  */
+/* .button-login{
+    display: flex;
+    justify-content: center;
+    height:35px;
+} */
+
+/* Here, I am working with the real button input  */
+.button-input{
+    background-color:#13505b;
+    color: white;
+    border: none;
+    height: 40px;
+    width: 350px;
+    padding: 5px;
+    margin: 5px;
+    font-size: 1.5em;
+}
