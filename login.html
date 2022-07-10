@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Angella's shop login form.">
+    <title>Login</title>
+    <link rel="icon" href="./media/image/logo.png" type="image/png">
+    <!-- <link rel="stylesheet" href="link to the css file" type="text/css"> -->
+    <!-- Using the style tag to import an external file for css in html  -->
+    <style type="text/css">
+        @import url("./css/style.css");
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- The div section is for the logo of the Application. -->
+        <div class="logo">
+            <img src="./media/image/logo.png" alt="Company's logo">
+        </div>
+    
+        <!-- The div section below is for the login details -->
+        <div class="div-form">
+            <div class="div-login">
+                <h1>LOGIN</h1>
+            </div>
+            <div class="form-login-div">
+                <form action="/login" id="form-login">
+                    <input class="user_credentials" type="text" name="user_credentials" placeholder="Enter email or phonenumber">
+                    <input class="password" type="password" name="password" placeholder="Enter password">
+                    <input type="submit" name="submit" value="Login" class="button-input">
+                    <p class="form-p">Do you have an account?<span> Signup</span> or <span>Forgot Password</span></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
