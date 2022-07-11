@@ -1,16 +1,18 @@
 .body{
     background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .header-bar{
     /* border:1px solid black; */
-    width: 99%;
+    width: 70%;
     background-color: #D7D9CE;
     display: inline-flex;
     justify-content: space-evenly;
-    height: 50px;
-    margin: 10px;
+    height: 30px;
+    margin-left: 15%;
     padding: 10px;
+    /* border: 1px solid black; */
 }
 .logo-home{
     width: 40px;
@@ -48,16 +50,82 @@ header>div>input{
 }
 
 .nav-header{
-    width: 600px;
+    width: 300px;
     padding: 0px;
 }
 .nav-header a{
     text-decoration: none;
     color: #13505b;
     font-weight: bold;
-    font-size: 2em;
+    font-size: 0.9em;
+    font-stretch: normal;
     font-family: Times;
-    margin-right: 70px;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+.categories{
+    display: flex;
+    padding: 10px;
+}
+/* Desigining the categories section in the home page  */
+.categories-div{
+    background-color: #13505b;
+    color:white;
+    height: 300px;
+    width: 12%;
+    margin-right: 10px;
+    margin-left: calc(18% + 10px);
+    
+}
+
+.big-sale-div{
+    background-color: #D7D9CE;
+    width: 52%;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.see-more-div{
+    background-color: #D7D9CE;
+    color: #13505b;
+    width:calc(64%);
+    height: 25px;
+    margin-left:19.2%; 
+    
+}
+
+/* .right-text{
+    
+} */
+
+.items-section{
+    height: 250px;
+    background-color: white;
+    width: 64%;
+    margin-top: 10px;
+    margin-left: 19.2%;
+    display: flex;
+    padding: 5px;
 
 
+}
+.item-div{
+    width:20%;
+    height: 200px;
+}
+
+.item-image{
+    width: 150px;
+    height: 150px;
+}
+
+.footer{
+    margin-top: 10px;
+    background-color: rgb(37, 36, 36);
+    width: 70%;
+    height: 250px;
+    margin-left: 15%;
+    color: white;
+    
 }
