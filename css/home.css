@@ -3,31 +3,61 @@
 }
 
 .header-bar{
-    border:1px solid black;
-    padding:20px;
-    width: 100%;
+    /* border:1px solid black; */
+    width: 99%;
     background-color: #D7D9CE;
     display: inline-flex;
+    justify-content: space-evenly;
+    height: 50px;
+    margin: 10px;
+    padding: 10px;
 }
 .logo-home{
-    width: 50px;
-    height:50px;
+    width: 40px;
+    height:40px;
 }
-.div-logo, .search-section, .nav-header{
-    padding: 5px;
+/* .div-logo, .search-section, .nav-header{
     justify-content: space-between;
-}
+    margin-left: 100px;
+} */
 
 .search-input{
     border-radius: 5px;
 }
 
-div{
-    border: 5px solid blue;
+.search-section{
+    display: inline-flex;
 }
 
-/* To remove the list style dot on un-ordered lists in html  */
+
+/* div{
+    border: 5px solid blue;
+} */
+
+/* To remove the list style dot on un-ordered lists in html 
 li{
     list-style-type: none;
     display: inline-flex;
+} */
+
+header>div>input{
+    border:1px solid #13505b;
+    color: #13505b;
+    width: 200px;
+    height: 25px;
+}
+
+.nav-header{
+    width: 600px;
+    padding: 0px;
+}
+.nav-header a{
+    text-decoration: none;
+    color: #13505b;
+    font-weight: bold;
+    font-size: 2em;
+    font-family: Times;
+    margin-right: 70px;
+
+
 }
