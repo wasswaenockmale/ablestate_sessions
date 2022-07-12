@@ -1,0 +1,52 @@
+.item-to-buy{
+    background-color:#D7D9CE;
+    height: 200px;
+    width: 64%;
+    margin-left: 18%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.rem-button{
+    background-color: #13505b;
+    color: white;
+    height: 25px;
+    width: 80px;
+}
+
+.remove-add-section{
+    width: 250px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    /* border:1px solid black; */
+    position:relative;
+    bottom: -175px;
+}
+
+.incremental-svg-file{
+    width: 20px;
+    height: 20px;
+    background-color: #13505b;
+}
+
+.decremental-svg-file{
+    width: 20px;
+    height: 20px;
+    background-color: #13505b;
+}
+
+.cart-image{
+    width: 200px;
+    height: 200px;
+}
+
+.image-description{
+    display: flex;
+}
+
+.description{
+    margin: 10px;
+}
