@@ -147,3 +147,8 @@ header>div>input{
     color: white;
     border: none;
 }
+
+.big-sale-div>div>h1{
+    text-transform: uppercase;
+    font-weight: bolder;
+}
