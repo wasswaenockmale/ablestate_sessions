@@ -104,6 +104,7 @@ header>div>input{
     background-color: white;
     width: 64%;
     margin-top: 10px;
+    margin-bottom: 40px;
     margin-left: 19.2%;
     display: flex;
     padding: 5px;
@@ -128,4 +129,21 @@ header>div>input{
     margin-left: 15%;
     color: white;
 
+}
+
+.big-sale-button{
+    width: 200px;
+    height: 30px;
+    background-color: #13505b;
+    color: white;
+    border: none;
+    margin: 10px;
+}
+
+.add-to-cart-button{
+    width: 100px;
+    height: 20px;
+    background-color: #13505b;
+    color: white;
+    border: none;
 }
