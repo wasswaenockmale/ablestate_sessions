@@ -183,3 +183,16 @@ header>div>input{
     padding: 1px;
 }
 /* Below are the CSS formatting for my icons in the project  */
+
+/* The .icon-space is the all space that contains the social-media icons  */
+.icon-space{
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+/* .facebook-icon{
+    fill: rgb(74, 74, 244);
+    stroke: white;
+} */
