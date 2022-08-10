@@ -27,7 +27,7 @@ let inventory = {
         {
             name:"Supa Loaf",
             price:55000,
-            image:"..media/image/Supa Loaf.png"
+            image:"../media/image/Supa Loaf.png"
         },
     ],
     // Electronics inventory starts here
@@ -35,7 +35,7 @@ let inventory = {
         {
             name: "Laptop",
             price: 235000,
-            image:"../media/image/lattop.png"
+            image:"../media/image/laptop.png"
         },
         {
             name:"Watch",
@@ -57,7 +57,7 @@ let inventory = {
         {
             name:"Headphones",
             price:15000,
-            image:"..media/image/headphones.png"
+            image:"../media/image/headphones.png"
         },
     ],
     // The clothing inventory start here
@@ -87,7 +87,7 @@ let inventory = {
         {
             name:"T-shirt",
             price:55000,
-            image:"..media/image/t-shirts.png"
+            image:"../media/image/t-shirts.png"
         },
     ],
     // The foot wear inventory starts here.
@@ -117,7 +117,7 @@ let inventory = {
         {
             name:"Sneakers",
             price:125000,
-            image:"..media/image/Sneakers.png"
+            image:"../media/image/Sneakers.png"
         },
     ]
     
