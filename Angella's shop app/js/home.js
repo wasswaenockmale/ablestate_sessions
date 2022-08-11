@@ -74,10 +74,19 @@ for(let btn of button){
     })
 }
 
+
+/**
+ * 
+ * @param {counter} counter 
+ */
 // Saving the counter to the cookie's local storage.
 let saveCounter = (counter)=>{
     localStorage.setItem('counter',counter)
 }
 
+/**
+ * 
+ * @returns returns the counter in the local-storage.
+ */
 // Accessing the counter from the web local storage
 let getCounter = ()=> localStorage.getItem('counter')
