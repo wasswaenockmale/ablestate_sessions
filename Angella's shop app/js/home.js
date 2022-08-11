@@ -69,5 +69,11 @@ for(let btn of button){
         console.log(itemPrice)
         sup.textContent = counter++
         sup.style.color = "red"
+        saveCounter(counter)
     })
+}
+
+// Saving the counter to the cookie's local storage.
+let saveCounter = (counter)=>{
+    localStorage.setItem('counter',counter)
 }
