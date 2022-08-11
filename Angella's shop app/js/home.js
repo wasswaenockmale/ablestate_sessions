@@ -50,7 +50,6 @@ let addItemsToHomePage = ()=>{
 // Call the addItemsToHomePage below to be able to load items to the page
 addItemsToHomePage()
 
-
 /**
  * making the 'add to cart' clickable and adding items to the cart as well.
  */
@@ -67,9 +66,9 @@ for(let btn of button){
         let itemPrice = btn.previousSibling.textContent
         console.log(itemName)
         console.log(itemPrice)
-        sup.textContent = counter++
+        saveCounter(+getCounter() + 1)
+        sup.textContent = getCounter()
         sup.style.color = "red"
-        saveCounter(counter)
     })
 }
 
@@ -77,3 +76,6 @@ for(let btn of button){
 let saveCounter = (counter)=>{
     localStorage.setItem('counter',counter)
 }
+
+// Accessing the counter from the web local storage
+let getCounter = ()=> localStorage.getItem('counter')
