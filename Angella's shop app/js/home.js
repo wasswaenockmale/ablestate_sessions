@@ -5,7 +5,11 @@ import { inventory } from "./inventory.js";
  * It adds items dynamically from the inventory database. 
  * My inventory database is an object.
  */
-let addItemsToHomePage = ()=>{
+// localStorage.clear()
+let sup = document.querySelector(".cart-counter")
+let addItemsToHomePage = ()=>{ 
+    sup.innerHTML = localStorage.getItem('counter')
+    sup.style.color = "red"
     // call the container here 
     let container = document.querySelector(".container")
     // Adding the content to the page dynamica
@@ -49,12 +53,11 @@ let addItemsToHomePage = ()=>{
 
 // Call the addItemsToHomePage below to be able to load items to the page
 addItemsToHomePage()
-let sup = document.querySelector(".cart-counter")
-sup.innerHTML = getCounter()
+
 /**
  * making the 'add to cart' clickable and adding items to the cart as well.
  */
-let counter = 1
+// let counter = 1
 let button = document.getElementsByClassName("add-to-cart-button")
 // let tn = document.querySelectorAll(".add-to-cart-button")
 for(let btn of button){
