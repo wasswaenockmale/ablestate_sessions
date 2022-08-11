@@ -31,12 +31,16 @@
     width: 20px;
     height: 20px;
     background-color: #13505b;
+    border: none;
+    padding: 1;
 }
 
 .decremental-svg-file{
     width: 20px;
     height: 20px;
     background-color: #13505b;
+    border: none;
+    padding: 1px;
 }
 
 .cart-image{
