@@ -49,18 +49,17 @@ let addItemsToHomePage = ()=>{
 
 // Call the addItemsToHomePage below to be able to load items to the page
 addItemsToHomePage()
-
+let sup = document.querySelector(".cart-counter")
+sup.innerHTML = getCounter()
 /**
  * making the 'add to cart' clickable and adding items to the cart as well.
  */
-let sup = document.querySelector(".cart-counter")
 let counter = 1
 let button = document.getElementsByClassName("add-to-cart-button")
 // let tn = document.querySelectorAll(".add-to-cart-button")
 for(let btn of button){
-    btn.addEventListener('click', (event)=>{
+    btn.addEventListener('click', ()=>{
         // Store what is clicked to the cookie Storage
-        
         let itemName = btn.previousSibling.previousSibling.textContent
         let itemImage = btn.previousSibling.previousSibling.previousSibling
         let itemPrice = btn.previousSibling.textContent
