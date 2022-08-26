@@ -7,7 +7,7 @@ let obj = {
     "four":4
 }
 
-let imagedir = "./media/images/"
+let imagedir = "./media/images/" // This is the starter URL for the images.
 
 for(let image of images){
     image.addEventListener('click',()=>{
