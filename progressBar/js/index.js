@@ -1,2 +1,38 @@
-const images = document.querySelector("img")
-console.log(images)
+const images = document.querySelectorAll("img")
+let arrClassNames = Array(images.length).fill("num")
+let obj = {
+    "one":1,
+    "two":2,
+    "three":3,
+    "four":4
+}
+
+let imagedir = "./media/images/"
+
+for(let image of images){
+    image.addEventListener('click',()=>{
+        let check = image.src.split("/")[image.src.split("/").length - 1]
+        if(!check.includes("fill")){
+            let [num, ext] = check.split("_")
+            let index = obj[num]
+            for(let k =  0; k < index; k++){
+                let [name, extension] = ext.split(".")
+                let newNum =  getKey(obj,k+1)
+                arrClassNames[k] = newNum;
+                images[k].src= imagedir+newNum+"_"+name+"_"+"fill"+"."+extension
+                if(images[k].previousElementSibling !== null){
+                    images[k].previousElementSibling.classList.add("hr-progress")
+                    // console.log(`${k}`,images[k].nextElementSibling)
+                }
+            }
+        }else{
+            console.log(check)
+        }
+    })
+}
+
+
+// This function helps me find the key basing on the value.
+function getKey(object, value){
+    return Object.keys(obj).find(key=>object[key] === value)
+}
