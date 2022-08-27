@@ -28,7 +28,7 @@ for(let image of images){
         }else{
             // Here, I am supposed to undo the progress.
             let [num, ext,fill] = check.split("_")
-            let index = obj[num] + 1
+            let index = obj[num] + 1 // adding a one helps not to undo the clicked image
 
             for(let k = arrClassNames.length-1; k >= index; k--){
                 let newNum = getKey(obj, k+1)
