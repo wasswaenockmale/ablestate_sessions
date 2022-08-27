@@ -7,7 +7,7 @@ let obj = {
     "four":4
 }
 
-let imagedir = "./media/images/"
+let imagedir = "./media/images/" // This is the starter URL for the images.
 
 for(let image of images){
     image.addEventListener('click',()=>{
@@ -28,20 +28,22 @@ for(let image of images){
         }else{
             // Here, I am supposed to undo the progress.
             let [num, ext,fill] = check.split("_")
-            let index = obj[num]
-            
+            let index = obj[num] + 1 // adding a one helps not to undo the clicked image
+
             for(let k = arrClassNames.length-1; k >= index; k--){
                 let newNum = getKey(obj, k+1)
                 arrClassNames[k] = "num"
                 images[k].src = imagedir+newNum+"_"+ext+".svg"
-                // console.log(images[k].src)
                 if(images[k].nextElementSibling !== null){
                     images[k].nextElementSibling.classList.remove("hr-progress")
                 }
             }
             images[index-1].src = imagedir+getKey(obj,index)+"_"+ext+".svg"
             if(images[index-1].nextElementSibling !== null){
-                images[index-1].nextElementSibling.classList.remove("hr-progress")
+                images[index - 1].nextElementSibling.classList.remove("hr-progress")
+                images[index-1].previousElementSibling.classList.remove("hr-progress")
+            }else{
+                images[index-1].previousElementSibling.classList.remove("hr-progress")
             }
         }
     })
