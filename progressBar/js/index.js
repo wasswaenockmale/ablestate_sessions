@@ -29,7 +29,7 @@ for(let image of images){
             // Here, I am supposed to undo the progress.
             let [num, ext,fill] = check.split("_")
             let index = obj[num] + 1
-            
+
             for(let k = arrClassNames.length-1; k >= index; k--){
                 let newNum = getKey(obj, k+1)
                 arrClassNames[k] = "num"
@@ -41,7 +41,9 @@ for(let image of images){
             images[index-1].src = imagedir+getKey(obj,index)+"_"+ext+".svg"
             if(images[index-1].nextElementSibling !== null){
                 images[index - 1].nextElementSibling.classList.remove("hr-progress")
-                // images[index-1].previousElementSibling.classList.remove("hr-progress")
+                images[index-1].previousElementSibling.classList.remove("hr-progress")
+            }else{
+                images[index-1].previousElementSibling.classList.remove("hr-progress")
             }
         }
     })
