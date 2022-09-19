@@ -24,3 +24,14 @@ const sr = document.getElementById("sr")
 const btn_start = document.getElementById("start")
 const btn_pause = document.getElementById("pause")
 const btn_stop = document.getElementById("stop")
+
+// When the user clicks on the start button.
+btn_start.onclick = ()=>{
+    if(micro.innerHTML == '0'){
+        let micro_value = +micro.innerText
+        setInterval(()=>{
+            micro_value+=1
+            micro.innerText = micro_value
+        },10)
+    }
+}
