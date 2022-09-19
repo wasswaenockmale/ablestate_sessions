@@ -32,6 +32,16 @@ btn_start.onclick = ()=>{
         setInterval(()=>{
             micro_value+=1
             micro.innerText = micro_value
-        },10)
+            if(micro_value === 60){
+                let value_sr = +sr.innerHTML
+                if((value_sr + 1)/10 === 0){
+                    second.innerHTML = value_sr + 1
+                }else{
+                    sr.innerText = value_sr + 1
+                }
+                micro_value = 0
+            }
+        },15)
     }
 }
+
