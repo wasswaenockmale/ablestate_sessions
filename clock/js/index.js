@@ -34,11 +34,17 @@ btn_start.onclick = ()=>{
             micro.innerText = micro_value
             if(micro_value === 60){
                 let value_sr = +sr.innerHTML
-                if((value_sr + 1)/10 === 0){
-                    second.innerHTML = value_sr + 1
+                value_sr++
+                if(value_sr ==10){
+                    let value_sl = +sl.innerHTML
+                    value_sl++
+                    sl.innerHTML = value_sl
+                    value_sr = 0
+                    sr.innerText = value_sr
                 }else{
-                    sr.innerText = value_sr + 1
+                    sr.innerHTML = value_sr
                 }
+                sr.innerText = value_sr
                 micro_value = 0
             }
         },15)
