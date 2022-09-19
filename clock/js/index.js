@@ -22,7 +22,6 @@ const sr = document.getElementById("sr")
 
 // Now call buttons 
 const btn_start = document.getElementById("start")
-const btn_pause = document.getElementById("pause")
 const btn_stop = document.getElementById("stop")
 
 // When the user clicks on the start button.
@@ -89,3 +88,10 @@ btn_start.onclick = ()=>{
     }
 }
 
+btn_pause.onclick = ()=>{
+    // Pause the stop clock 
+}
+
+btn_stop.onclick = ()=>{
+
+}
