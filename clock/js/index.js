@@ -88,10 +88,6 @@ btn_start.onclick = ()=>{
     }
 }
 
-btn_pause.onclick = ()=>{
-    // Pause the stop clock 
-}
-
 btn_stop.onclick = ()=>{
 
 }
