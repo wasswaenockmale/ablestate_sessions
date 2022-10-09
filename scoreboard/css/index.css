@@ -1,0 +1,24 @@
+.scoreboard{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 30%;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.scoreboard__name,
+.scoreboard__score{
+    padding: 10px;
+    text-align: center;
+}
+
+.scoreboard__name{
+    font-weight: bold;
+}
+
+.scoreboard__name-one{
+    color: aqua;
+}
+
+.scoreboard__name-two{
+    color: blue;
+}
