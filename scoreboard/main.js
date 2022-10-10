@@ -3,7 +3,18 @@ import ScoreboardView from './scoreboardJS/ScoreboardView.js'
 const root = document.getElementById("app")
 let playerOneName = "Enock";
 let playerTwoName = "Male"
-const view = new ScoreboardView(root, {playerOneName, playerTwoName,onScoreChange(playerOne,playerTwo){
-    console.log(playerOne,playerTwo)
+
+let playerOneScore = 0;
+let playerTwoScore = 0
+const view = new ScoreboardView(root, {playerOneName, playerTwoName,onScoreChange(player, incre){
+    const difference = incre === "minus" ? -1 : 1
+
+    if(player === "one"){
+        playerOneScore = Math.max(difference + playerOneScore, 0)
+    }else{
+        playerTwoScore = Math.max(difference + playerTwoScore,0)
+    }
+
+    view.updateScore(playerOneScore, playerTwoScore)
 }}
 )
