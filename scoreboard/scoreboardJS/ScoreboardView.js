@@ -30,4 +30,9 @@ export default class ScoreboardView{
             })
         });
     }
+
+    updateScore(playerOne, playerTwo){
+        this.root.querySelector(".scoreboard__score[data-for-player='one']").textContent = playerOne
+        this.root.querySelector(".scoreboard__score[data-for-player='two']").textContent = playerTwo
+    }
 }
