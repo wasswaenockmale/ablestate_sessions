@@ -1,5 +1,9 @@
 import ScoreboardView from './scoreboardJS/ScoreboardView.js'
 
 const root = document.getElementById("app")
-
-const view = new ScoreboardView(root, "Enock","Male")
+let playerOneName = "Enock";
+let playerTwoName = "Male"
+const view = new ScoreboardView(root, {playerOneName, playerTwoName,onScoreChange(playerOne,playerTwo){
+    console.log(playerOne,playerTwo)
+}}
+)
