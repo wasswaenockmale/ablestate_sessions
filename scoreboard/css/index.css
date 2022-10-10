@@ -7,14 +7,14 @@
 
 .scoreboard__name,
 .scoreboard__score{
-    padding: 10px;
+    padding: 1.2em;
     text-align: center;
     font-size: 2em;
 }
 
 .scoreboard__name{
     font-weight: bold;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 0.09em solid #ddd;
 }
 
 .scoreboard__name-one{
